@@ -23,7 +23,7 @@ app.post('/', function(req, res){
   for (let i in data ){
     console.log(`${i} ${data[i].name} ${data[i].email} ${data[i].gender} ${data[i].pnumber}`);
   }
-  res.send('Thanks');
+  res.render('thanks');
 })
 
 app.get('/download', function(req, res){
